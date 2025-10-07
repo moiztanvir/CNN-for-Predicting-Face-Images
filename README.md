@@ -32,8 +32,11 @@ The model is compiled with Adam optimizer, multi-output losses (categorical_cros
 
 ### 2. Dataset and Splits
 The dataset directory contains images/ and per-image annotations/ for expression, valence, and arousal. After cleaning invalid labels (-2), the data are split as follows:
+
 Training: 64 % of total images
+
 Validation: 16 %
+
 Test: 20 %
 
 A custom MultiOutputGenerator performs on-the-fly loading and optional augmentation (rotation, shifts, horizontal flips) for training batches.
